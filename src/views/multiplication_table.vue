@@ -4,6 +4,8 @@ import {ref} from 'vue';
 let name = ref(null)
 let rows = ref(12)
 let cols = ref(12)
+let to_highlight = ref(null)
+let should_calculate = ref(true)
 </script>
 
 <template> <!-- Html Mark up would go here -->
@@ -23,17 +25,34 @@ let cols = ref(12)
       <input type="number" id="cols" v-model.number="cols"/>
     </label>
 
+    <label for="to_highlight">
+      <span>Which row & column do you want to highlight?</span>
+      <input type="number" id="to_highlight" v-model.number="to_highlight"/>
+    </label>
+
+    <label id="should_calculate">
+      <span>Do you want to see the calculated values</span>
+      <input type="checkbox" id="should_calculate" v-model="should_calculate"/>
+    </label>
+
     <p v-if="name">Hi there <span v-html="name"/>, let's build our table</p>
     <p v-else>Hi there!</p>
 
     <!-- Vue conditional, IF name is SOMETHING then show 1st paragraph -->
     <p>You want {{rows}} rows</p>
     <p>You want {{cols}} columns</p>
+    <p>Should we calculate the times table value? {{should_calculate}}</p>
 
     <table>
       <tr v-for="row in rows" :key="row">
        <td v-for="col in cols" :key="col">
-         {{row * col}}
+         <template v-if="should_calculate === true">
+           {{row * col}}
+         </template>
+
+         <template v-else>
+           {{row}} * {{col}}
+         </template>
        </td>
       </tr>
     </table>
