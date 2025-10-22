@@ -7,9 +7,6 @@ let cols = ref(12)
 </script>
 
 <template> <!-- Html Mark up would go here -->
-  <h1>Hello world!</h1>
-  <p>My multiplication table will live here</p>
-
   <div class="inputs">
     <label for="name">
       <span>What's your name:</span>
@@ -30,8 +27,16 @@ let cols = ref(12)
     <p v-else>Hi there!</p>
 
     <!-- Vue conditional, IF name is SOMETHING then show 1st paragraph -->
-    <p>How many rows do I have? {{rows}}</p>
-    <p>How many cols do I have? {{cols}}</p>
+    <p>You want {{rows}} rows</p>
+    <p>You want {{cols}} columns</p>
+
+    <table>
+      <tr v-for="row in rows" :key="row">
+       <td v-for="col in cols" :key="col">
+         {{row * col}}
+       </td>
+      </tr>
+    </table>
   </div>
 </template>
 
