@@ -4,7 +4,7 @@ import {ref} from 'vue';
 let name = ref(null)
 let rows = ref(12)
 let cols = ref(12)
-let to_highlight = ref(null)
+let to_highlight = ref(6)
 let should_calculate = ref(true)
 </script>
 
@@ -44,8 +44,8 @@ let should_calculate = ref(true)
     <p>Should we calculate the times table value? {{should_calculate}}</p>
 
     <table>
-      <tr v-for="row in rows" :key="row">
-       <td v-for="col in cols" :key="col">
+      <tr v-for="row in rows" :key="row" :class="{'highlighted' : row === to_highlight}">
+       <td v-for="col in cols" :key="col" :class="{'highlighted' : col === to_highlight}">
          <template v-if="should_calculate === true">
            {{row * col}}
          </template>
@@ -61,7 +61,7 @@ let should_calculate = ref(true)
 
 <style scoped> /* CSS code would go here, JUST THIS DOC */
 div.inputs {
-  width: 50%;
+  max-width: 30%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -69,9 +69,22 @@ div.inputs {
 
   label {
     padding: 10px;
-    border: 1px solid red;
+    border: 2px solid black;
     display: flex;
     gap: 15px;
+  }
+
+  table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    tr, td {
+      padding: 4px;
+      text-align: center;
+
+      &.highlighted {
+        background-color: yellow;
+      }
+    }
   }
 }
 </style>
