@@ -1,14 +1,12 @@
 <script setup lang="ts">
-
+import my_button from "@/Components/my_button.vue";
 </script>
 
 <template>
   <nav>
-    <router-link :to="{name: 'home'}">Home</router-link>
-    |
-    <router-link :to="{name: 'multiplication_table'}">Multiplication Table</router-link>
-    |
-    <router-link :to="{name: 'about_me'}">About Me</router-link>
+    <my_button link_text="Home" route_name="home" theme="primary"/>
+    <my_button link_text="Multiplication Table" route_name="multiplication_table"/>
+    <my_button link_text="About Me" route_name="about_me"/>
   </nav>
 </template>
 
@@ -17,6 +15,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    align-items: center;
 
     a {
       text-decoration: none;

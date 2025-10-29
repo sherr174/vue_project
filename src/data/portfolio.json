@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Duobam",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Tangy green salsa made with tomatillos, perfect for tacos.",
+    "tools": "Figma",
+    "when_created": 0,
+    "created_for": "Text & Image"
+  },
+  {
+    "id": 2,
+    "title": "Stim",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Easy-to-make pancake mix with chocolate chips included.",
+    "tools": "Lightroom",
+    "when_created": 2013,
+    "created_for": "Game Design"
+  },
+  {
+    "id": 3,
+    "title": "Cookley",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "A fresh, flavorful basil pesto for pasta and more",
+    "tools": "Fresco",
+    "when_created": 2005,
+    "created_for": "Web Design"
+  },
+  {
+    "id": 4,
+    "title": "Greenlam",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Ergonomically designed pillow with breathable bamboo cover.",
+    "tools": "Illustrator",
+    "when_created": 2007,
+    "created_for": "Game Design"
+  },
+  {
+    "id": 5,
+    "title": "Stronghold",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Stylish and modern holder for storing wine bottles on walls.",
+    "tools": "Illustrator",
+    "when_created": 1998,
+    "created_for": "Typography"
+  },
+  {
+    "id": 6,
+    "title": "Viva",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Convenient strap for carrying yoga mats to class.",
+    "tools": "ProCreate",
+    "when_created": 2018,
+    "created_for": "Web Design"
+  },
+  {
+    "id": 7,
+    "title": "Konklux",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "A delightful mix of chocolate, coconut, and almonds in a snack bar.",
+    "tools": "Lightroom",
+    "when_created": 2010,
+    "created_for": "Web Design"
+  },
+  {
+    "id": 8,
+    "title": "Aerified",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Chewy granola bars with maple and cinnamon flavor.",
+    "tools": "Illustrator",
+    "when_created": 0,
+    "created_for": "Web Design"
+  },
+  {
+    "id": 9,
+    "title": "Job",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "500-piece jigsaw puzzle featuring beautiful scenery.",
+    "tools": "Fresco",
+    "when_created": 2012,
+    "created_for": "Text & Image"
+  },
+  {
+    "id": 10,
+    "title": "Dummy",
+    "thumbnail": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "description": "Stay hydrated with refreshing flavored water.",
+    "tools": "Fresco",
+    "when_created": 2018,
+    "created_for": "Packaging"
+  }
+]

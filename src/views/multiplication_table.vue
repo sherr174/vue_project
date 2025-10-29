@@ -4,7 +4,7 @@ import {ref} from 'vue';
 let name = ref(null)
 let rows = ref(12)
 let cols = ref(12)
-let to_highlight = ref(6)
+let to_highlight = ref(7)
 let should_calculate = ref(true)
 </script>
 
