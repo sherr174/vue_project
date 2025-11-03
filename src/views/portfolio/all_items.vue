@@ -1,5 +1,6 @@
 <script setup>
 import portfolio_data from '@/data/portfolio.json'
+import portfolio_item_details from "@/views/portfolio/portfolio_item_details.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import portfolio_data from '@/data/portfolio.json'
     <div class="preview_card" v-for="portfolio_item in portfolio_data" :key="portfolio_item.id">
       <img :src="portfolio_item.thumbnail" alt="image_goes_here_dummy"/>
       <div>{{ portfolio_item.title }}</div>
+      <router-link :to="{name:'portfolio_item_details', params: {portfolio_id: portfolio_item.id}}">More Details</router-link>
     </div>
   </div>
 </template>
